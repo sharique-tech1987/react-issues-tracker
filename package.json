@@ -13,6 +13,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "json-server": "json-server --watch store.json --port 3004",
+    "dev": "concurrently \"yarn start\" \"yarn run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -33,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^5.2.0",
     "json-server": "^0.16.1"
   }
 }
