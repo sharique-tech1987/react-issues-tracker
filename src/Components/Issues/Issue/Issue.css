@@ -1,5 +1,23 @@
 .issue-desc{
     min-height: 150px;
     border: 1px solid #eee;
+}
+.comment-desc{
+    min-height: 150px;
+    border: 1px solid #cccccc;
+}
+.comment-heading {
+    background-color: #dedede;
+    padding: 1px  0 0 4px;
+    border-bottom: 1px solid #bfbfbf;
+    color: #404040;
+}
+.comment-user{
+    font-weight: 600;
+}
+.content-pad{
     padding: 5px;
+}
+.create-margin{
+    margin: 0 0 10px 0;
 }

@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import "./App.css"
 import Issues from './Components/Issues'
 import Issue from "./Components/Issues/Issue";
+import AppUrls from "./AppUrls";
 
 class App extends Component {
   state = {
@@ -11,11 +12,8 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const issues = await (await fetch('http://localhost:3004/issues')).json()
-    const issues_status = await (await fetch('http://localhost:3004/issues_status')).json()
-
-    // console.log("============ Fetching Support Tickets =========");
-    // console.log(issues);
+    const issues = await (await fetch(AppUrls.get_issues_url())).json()
+    const issues_status = await (await fetch(AppUrls.get_issues_status_url())).json()
 
     this.setState({issues, issues_status});
   }

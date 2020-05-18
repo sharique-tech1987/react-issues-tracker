@@ -3,8 +3,6 @@ import {Link, Route} from "react-router-dom";
 import "./Issues.css"
 
 export default ({list:issues_list, issues_status}) => (
-    // console.log("======== In Issues =======") || console.log(issues_status) ||
-    // console.log("======== In Issues =======") || console.log(issues_list) ||
     <Fragment>
         <h2>Issues</h2>
 
